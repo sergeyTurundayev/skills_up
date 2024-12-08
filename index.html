@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ua">
+<!-- U8pxPnCFmVzzxvD -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <style>
+    body {
+      font: 17px/19px 'Anonymous Pro', Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #0f0f0f;
+      background: #fff;
+    }
+
+    p {
+      margin: 0 0 20px;
+    }
+
+    a {
+      color: #8815D2;
+      text-decoration: none;
+      transition: all 0.6s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <nav class="main_nav">
+    <style>
+      .main_nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        color: #fff;
+        transition: all 0.6s;
+        padding: 39px 0;
+      }
+
+      .scrolled .main_nav {
+        background: #fff;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.19);
+        color: #0f0f0f;
+        padding: 13px 0;
+      }
+
+      .main_nav_center {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 29px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav_logo {
+        font-size: 25px;
+        line-height: 1;
+        font-weight: normal;
+      }
+
+      .main_nav_list {
+        display: flex;
+        margin: 0 -30px;
+        padding: 0;
+        list-style: none;
+        font-size: 20px;
+        line-height: 1;
+      }
+
+      .main_nav_item {
+        margin: 0 30px;
+      }
+
+      .main_nav_link {
+        color: #fff;
+      }
+
+      .main_nav_link:hover {
+        color: #F9F44D;
+        text-decoration: none;
+      }
+
+      .scrolled .main_nav_link {
+        color: #0f0f0f;
+      }
+
+      .scrolled .main_nav_link:hover {
+        color: #8815D2;
+      }
+
+      .main_nav_menu {
+        display: none;
+      }
+
+      @media (max-width: 640px) {
+        .main_nav_center {
+          position: relative;
+        }
+
+        .main_nav_list {
+          position: absolute;
+          right: 29px;
+          top: 100%;
+          background: #fff;
+          display: block;
+          max-height: 0;
+          overflow: hidden;
+          transition: all 0.6s;
+          margin: 13px 0 0;
+        }
+
+        .open_menu .main_nav_list {
+          max-height: 999px;
+        }
+
+        .main_nav_item {
+          margin: 19px 0;
+        }
+
+        .main_nav_link {
+          color: #0f0f0f;
+          padding: 3px 19px;
+        }
+
+        .main_nav_menu {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 29px;
+          height: 29px;
+          border-top: 5px solid #fff;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+
+        .scrolled .main_nav_menu {
+          border-color: #0f0f0f;
+        }
+
+        .main_nav_menu:before,
+        .main_nav_menu:after {
+          content: '';
+          display: block;
+          width: 29px;
+          height: 5px;
+          background: #fff;
+          transition: all 0.6s;
+        }
+
+        .scrolled .main_nav_menu:before,
+        .scrolled .main_nav_menu:after {
+          background: #0f0f0f;
+        }
+
+        .main_nav_menu:before {
+          margin: 0 0 5px;
+        }
+
+        .open_menu .main_nav_menu {
+          border: none;
+        }
+
+        .open_menu .main_nav_menu:before {
+          transform: rotate(45deg);
+          margin: 0;
+        }
+
+        .open_menu .main_nav_menu:after {
+          transform: rotate(-45deg);
+          margin: -5px 0 0;
+        }
+      }
+    </style>
+    <div class="main_nav_center">
+      <strong class="nav_logo">SkillsUp</strong>
+      <ul class="main_nav_list">
+        <li class="main_nav_item">
+          <a class="main_nav_link" href="about">Про Нас</a>
+        </li>
+        <li class="main_nav_item">
+          <a class="main_nav_link" href="courses">Курси</a>
+        </li>
+        <li class="main_nav_item">
+          <a class="main_nav_link" href="footer">Контакти</a>
+        </li>
+      </ul><!-- main_nav_list -->
+      <div class="main_nav_menu"></div>
+    </div>
+  </nav><!-- main_nav -->
+  <section class="intro">
+    <style>
+      .intro {
+        background: url('images/up_intro.jpeg') no-repeat center;
+        background-size: cover;
+        color: #fff;
+        overflow: hidden;
+      }
+
+      .intro_center {
+        max-width: 1200px;
+        padding: 113px 29px 0;
+        margin: 0 auto;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .intro_text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .intro_logo {
+        font-size: 100px;
+        line-height: 1;
+        margin: 0 0 30px;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+      }
+
+      .intro_description {
+        font-size: 30px;
+        line-height: 1;
+        font-weight: normal;
+        margin: 0 0 30px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+      }
+
+      .intro_button {
+        display: inline;
+        background: #8815D2;
+        color: #fff;
+        padding: 16px 51px;
+        font-size: 20px;
+        line-height: 1;
+        border: 2px solid #8815D2;
+        border-radius: 30px;
+        transition: all 0.6s;
+        cursor: pointer;
+      }
+
+      .intro_button:hover {
+        background: #fff;
+        color: #8815D2;
+      }
+      @media (max-width: 480px) {
+        .intro_logo{
+          font-size: 80px;
+        }
+      }
+    </style>
+    <div class="intro_center">
+      <div class="intro_text">
+        <h1 class="intro_logo">SkillsUp</h1>
+        <strong class="intro_description">опануй нову професію безкоштовно</strong>
+        <button class="intro_button popup_visible">розпочати навчання</button>
+      </div><!-- intro_text -->
+    </div><!-- intro_ceenter -->
+  </section>
+  <section class="numbers">
+    <style>
+      .numbers {
+        background: #F9F44D;
+        margin: 0 0 138px;
+      }
+
+      .numbers_center {
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 26px 29px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .number {
+        display: block;
+        font-size: 80px;
+        line-height: 1;
+        font-weight: 700;
+        margin: 0 0 27px;
+      }
+
+      .number_text {
+        display: block;
+        font-size: 20px;
+        line-height: 1;
+      }
+      @media (max-width: 640px) {
+        .numbers_center{
+          align-items: flex-start;
+        }
+        .number_box{
+          padding: 0 19px 19px;
+          box-sizing: border-box;
+          flex: 1 1 100%;
+          overflow: hidden;
+        }
+        .number{
+          font-size: 50px;
+          margin: 0 0 7px;
+        }
+        .number_text{
+          font-size: 17px;
+        }
+      }
+    </style>
+    <div class="numbers_center">
+      <div class="number_box">
+        <span class="number">8</span>
+        <span class="number_text">зустрічей</span>
+      </div><!-- number_box -->
+      <div class="number_box">
+        <span class="number">7,5</span>
+        <span class="number_text">навчальних годин з фахівцем</span>
+      </div><!-- number_box -->
+      <div class="number_box">
+        <span class="number">1,5</span>
+        <span class="number_text">місяця</span>
+      </div><!-- number_box -->
+    </div><!-- numbers_center -->
+  </section><!-- numbers -->
+  <section class="about" id="about">
+    <style>
+      .about_center {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 29px;
+        box-sizing: border-box;
+      }
+
+      .about_container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 120px;
+      }
+
+      .about_text {
+        flex: 1 1;
+        font-size: 18px;
+        line-height: 1;
+      }
+
+      .about_text p:last-child {
+        margin: 0;
+      }
+
+      .about_text_title {
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 700;
+        margin: 0 0 30px;
+        display: inline-block;
+      }
+
+      .about_text_title_text {
+        display: block;
+        margin: 0 0 8px;
+      }
+
+      .about_text_title:after {
+        content: '';
+        display: block;
+        background: #8815D2;
+        height: 5px;
+        margin: 0 20px;
+      }
+
+      .about_picture {
+        flex: 0 1 293px;
+        display: block;
+        overflow: hidden;
+        border-radius: 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.19);
+        margin: 0 0 0 82px;
+      }
+
+      .about_picture.right {
+        order: -1;
+        margin: 0 82px 0 0;
+      }
+
+      .about_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      @media (max-width: 800px) {
+        .about_container {
+          flex-direction: column;
+        }
+
+        .about_picture,
+        .about_picture.right {
+          order: -1;
+          margin: 0 auto 29px;
+          max-width: 400px;
+          height: 400px;
+          flex: 0 1 400px;
+        }
+      }
+    </style>
+    <div class="about_center">
+      <div class="about_container">
+        <div class="about_text">
+          <h2 class="about_text_title">
+            <span class="about_text_title_text">Про Нас</span>
+          </h2>
+          <p>З дівчатами ми познайомились, У КГЦ Шелтор+,де, як виявилось, кожна тільки тільки почала свій волонтерський
+            шлях. З того дня було багато чого. Навчання,спільне волонтерство,тренінги та відпочинок-ми стали справжньою
+            командою.Але увесь цей шлях нас не покидала думка що ми спроможні на щось більше. На наш особистий проєкт.
+            Проєкт, який хоч трохи допоможе нашій громаді. З такими думками ми і потрапили на апшифт.Протягом усього
+            цього часу, було багато перешкод.Непорозумінь,горящих дедлайнів та помилок.Але ми не кидали руки. І не
+            зрибаемося робити цього і подалі.</p>
+          <p>Наш шлях тільки починаеться. І ми пропонуемо саме тобі розділити його з нами </p>
+        </div><!-- about_text -->
+        <picture class="about_picture">
+          <img src="images/about_hart.jpeg" alt="about us" class="about_img">
+        </picture><!-- about_picture -->
+      </div><!-- about_container -->
+      <div class="about_container">
+        <div class="about_text">
+          <h2 class="about_text_title">
+            <span class="about_text_title_text">Чого ми прагнемо?</span>
+          </h2>
+          <p>З дівчатами ми познайомились, У КГЦ Шелтор+,де, як виявилось, кожна тільки тільки почала свій волонтерський
+            шлях. З того дня було багато чого. Навчання,спільне волонтерство,тренінги та відпочинок-ми стали справжньою
+            командою.Але увесь цей шлях нас не покидала думка що ми спроможні на щось більше. На наш особистий проєкт.
+            Проєкт, який хоч трохи допоможе нашій громаді. З такими думками ми і потрапили на апшифт.Протягом усього
+            цього часу, було багато перешкод.Непорозумінь,горящих дедлайнів та помилок.Але ми не кидали руки. І не
+            зрибаемося робити цього і подалі.</p>
+          <p>Наш шлях тільки починаеться. І ми пропонуемо саме тобі розділити його з нами </p>
+        </div><!-- about_text -->
+        <picture class="about_picture right">
+          <img src="images/about_mind.jpeg" alt="about us" class="about_img">
+        </picture><!-- about_picture -->
+      </div><!-- about_container -->
+    </div><!-- about_center -->
+  </section><!-- about -->
+  <section class="courses" id="courses">
+    <style>
+      .courses {
+        margin: 0 auto 68px;
+        max-width: 1200px;
+        padding: 0 29px;
+        box-sizing: border-box;
+      }
+
+      .courses_title {
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 700;
+        margin: 0 0 30px;
+        display: inline-block;
+      }
+
+      .courses_title_text {
+        display: block;
+        margin: 0 0 8px;
+      }
+
+      .courses_title:after {
+        content: '';
+        display: block;
+        background: #8815D2;
+        height: 5px;
+        margin: 0 20px;
+      }
+
+      .courses_block {
+        display: flex;
+        padding: 36px 16px;
+        background: #F9F44D;
+        border-radius: 30px;
+        margin: 0 0 46px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.19);
+        overflow: hidden;
+      }
+
+      .courses_picture {
+        flex: 0 1 247px;
+        display: block;
+        border-radius: 50px;
+        overflow: hidden;
+        margin: 0 20px 0 0;
+      }
+
+      .courses_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .courses_text {
+        flex: 1 1;
+      }
+
+      .courses_text_title {
+        font-size: 25px;
+        line-height: 1;
+        margin: 0 0 14px;
+      }
+
+      .courses_text p {
+        margin: 0 0 16px;
+      }
+
+      .courses_info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 -31px;
+      }
+
+      .courses_info_box {
+        margin: 0 31px 31px;
+        flex: 1 1;
+        white-space: nowrap;
+      }
+
+      .courses_info_box_title {
+        display: flex;
+      }
+
+      .courses_info_box_text {
+        display: block;
+      }
+
+      .courses_button {
+        font-size: 16px;
+        line-height: 1;
+        background: #8815D2;
+        border: 2px solid #8815D2;
+        color: #fff;
+        padding: 14px;
+        border-radius: 30px;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.6s;
+      }
+
+      .courses_button:hover {
+        background: #fff;
+        color: #8815D2;
+      }
+
+      @media (max-width: 800px) {
+        .courses_block {
+          flex-direction: column;
+        }
+
+        .courses_picture {
+          margin: 0 0 29px;
+        }
+      }
+    </style>
+    <h2 class="courses_title">
+      <span class="courses_title_text">Курси</span>
+    </h2>
+    <div class="courses_block">
+      <picture class="courses_picture">
+        <img src="images/cmm.jpeg" alt="cmm" class="courses_img">
+      </picture>
+      <div class="courses_text">
+        <h3 class="courses_text_title">СММ</h3>
+        <p>Курс з основ SMM навчає створювати стратегії, працювати з контентом, просувати бренди у соцмережах та
+          ефективно залучати аудиторію для бізнесу.</p>
+        <div class="courses_info">
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Старт</strong>
+            <span class="courses_info_box_text">25.12.2024</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Формат</strong>
+            <span class="courses_info_box_text">Оффлайн</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Тривалість</strong>
+            <span class="courses_info_box_text">1,5 місяця</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Локація</strong>
+            <span class="courses_info_box_text">Кривий Ріг</span>
+          </div><!-- courses_info_box -->
+        </div><!-- courses_info -->
+        <button class="courses_button popup_visible">Зареструватісь</button>
+      </div><!-- courses_text -->
+    </div><!-- courses_block -->
+
+    <div class="courses_block">
+      <picture class="courses_picture">
+        <img src="images/pro.jpeg" alt="cmm" class="courses_img">
+      </picture>
+      <div class="courses_text">
+        <h3 class="courses_text_title">Програмування</h3>
+        <p>Курс з основ програмування навчить вас базовим концепціям, роботі з кодом, алгоритмами та популярній мові
+          програмування JavaScript</p>
+        <div class="courses_info">
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Старт</strong>
+            <span class="courses_info_box_text">29.12.2024</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Формат</strong>
+            <span class="courses_info_box_text">Оффлайн</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Тривалість</strong>
+            <span class="courses_info_box_text">1,5 місяця</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Локація</strong>
+            <span class="courses_info_box_text">Кривий Ріг</span>
+          </div><!-- courses_info_box -->
+        </div><!-- courses_info -->
+        <button class="courses_button popup_visible">Зареструватісь</button>
+      </div><!-- courses_text -->
+    </div><!-- courses_block -->
+
+    <div class="courses_block">
+      <picture class="courses_picture">
+        <img src="images/flow.jpeg" alt="cmm" class="courses_img">
+      </picture>
+      <div class="courses_text">
+        <h3 class="courses_text_title">Флористика</h3>
+        <p>Курс з основ флористики навчить вас створювати композиції, працювати з квітами, розуміти колористику,та
+          реалізовувати творчі ідеї в різних стилях.</p>
+        <div class="courses_info">
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Старт</strong>
+            <span class="courses_info_box_text">23.12.2024</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Формат</strong>
+            <span class="courses_info_box_text">Оффлайн</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Тривалість</strong>
+            <span class="courses_info_box_text">1,5 місяця</span>
+          </div><!-- courses_info_box -->
+          <div class="courses_info_box">
+            <strong class="courses_info_box_title">Локація</strong>
+            <span class="courses_info_box_text">Кривий Ріг</span>
+          </div><!-- courses_info_box -->
+        </div><!-- courses_info -->
+        <button class="courses_button popup_visible">Зареструватісь</button>
+      </div><!-- courses_text -->
+    </div><!-- courses_block -->
+  </section>
+  <section class="questions">
+    <style>
+      .questions {
+        max-width: 1200px;
+        padding: 0 29px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+
+      .questions_title {
+        font-size: 30px;
+        left: 1;
+        font-weight: 700;
+        margin: 0 0 36px;
+        display: inline-block;
+      }
+
+      .question_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #8815D2;
+        border-radius: 30px;
+        padding: 16px 38px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1;
+        margin: 0 0 21px;
+        cursor: pointer;
+      }
+
+      .question_title_close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .question_title_close:before,
+      .question_title_close:after {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 19px;
+        background: #fff;
+        border-radius: 4px;
+      }
+
+      .question_title_close:before {
+        transform: rotate(90deg);
+        margin: 0 -19px 0 0;
+        transition: all 0.6s;
+      }
+
+      .question_block.open .question_title_close:before {
+        transform: rotate(0);
+      }
+
+      .question_text {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.6s;
+        margin: 0 0 36px;
+        padding: 0 15px;
+      }
+
+      .open .question_text {
+        max-height: 999px;
+      }
+    </style>
+    <h2 class="questions_title">Q&A</h2>
+    <div class="question_block">
+      <h3 class="question_title">
+        <span>Для кого ці курси?</span>
+        <div class="question_title_close"></div>
+      </h3>
+      <div class="question_text">
+        <p>Якщо ти ученик_ця 9-11 класів або коледжу, проживаешь у місті Кривий Ріг, хочешь отримати новий досвід та
+          знання, проєкт SkillUp саме для тебе!</p>
+      </div><!-- question_text -->
+    </div><!-- question_block -->
+
+    <div class="question_block">
+      <h3 class="question_title">
+        <span>Набір закрито.Що робити?</span>
+        <div class="question_title_close"></div>
+      </h3>
+      <div class="question_text">
+        <p>Якщо ти не встиг_ла,заареструватись на бажанний курс не біда!У рамках нашої програми плануеться принаймі дві
+          ідентичні хвилі.Тож заповюй реестрацію як зазвичай, та вставай у чергу на другий набір!</p>
+      </div><!-- question_text -->
+    </div><!-- question_block -->
+
+    <div class="question_block">
+      <h3 class="question_title">
+        <span>Так скільки все це коштує?</span>
+        <div class="question_title_close"></div>
+      </h3>
+      <div class="question_text">
+        <p>Аніскіли.Так так,усі звикли що безкоштовний сир тільки у мишиловках, але в нашому випадку він справді free. В
+          замін на наші ідеї на честний труд, усі витрати на спеціалістів та матеріали покриває фінансування нашого
+          проєкту.</p>
+      </div><!-- question_text -->
+    </div><!-- question_block -->
+  </section><!-- questions -->
+  <footer id="footer">
+    <style>
+      footer {
+        background: #F9F44D;
+        padding: 14px 0;
+      }
+
+      .footer_center {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 29px;
+        box-sizing: border-box;
+      }
+
+      .footer_container {
+        display: flex;
+        margin: 0 -25px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer_logo {
+        width: 97px;
+        min-width: 97px;
+        height: 101px;
+        background: url(images/footer_logo.png) no-repeat center;
+        background-size: contain;
+        display: block;
+        margin: 0 25px;
+        overflow: hidden;
+        text-indent: -999px;
+      }
+
+      .footer_text {
+        flex: 1 1;
+        margin: 0 25px;
+      }
+
+      .footer_logos {
+        background: url(images/footer_logos.png) no-repeat center;
+        background-size: contain;
+        width: 233px;
+        height: 65px;
+        margin: 0 25px;
+        display: block;
+      }
+
+      .footer_hodi {
+        display: block;
+        width: 102px;
+        height: 101px;
+        background: url(images/hodi.png) no-repeat center;
+        background-size: contain;
+        margin: 0 25px;
+      }
+
+      @media (max-width: 800px) {
+        .footer_container {
+          flex-wrap: wrap;
+        }
+
+        .footer_logo {
+          box-sizing: border-box;
+        }
+
+        .footer_text {
+          flex: 1 1 50%;
+          margin: 0;
+          padding: 0 19px;
+          box-sizing: border-box;
+        }
+      }
+    </style>
+    <div class="footer_center">
+      <div class="footer_container">
+        <strong class="footer_logo">up shift ukraine</strong>
+        <div class="footer_text">Проєкт "SkillUp" створений в межах програми UPSHIFT, яку в Дніпропетровській області
+          реалізує ГО “Заходи”, за підтримки ЮНІСЕФ Україна та Федерального міністерства економічного співробітництва і
+          розвитку Німеччини через німецький державний банк розвитку KfW</div>
+        <span class="footer_logos"></span>
+        <span class="footer_hodi"></span>
+      </div><!-- footer_container -->
+    </div><!-- footer_center -->
+  </footer>
+  <div class="popup">
+    <style>
+      .popup {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.67);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.6s;
+      }
+
+      .popup.visible {
+        opacity: 1;
+        z-index: 999;
+      }
+
+      .popup_block {
+        max-width: 430px;
+        background: #fff;
+        border-radius: 30px;
+        border: 7px solid #8815D2;
+        padding: 29px 60px;
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .popup_block_close {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 17px;
+        top: 17px;
+        cursor: pointer;
+      }
+
+      .popup_block_close:before,
+      .popup_block_close:after {
+        content: '';
+        width: 25px;
+        height: 5px;
+        background: #0f0f0f;
+      }
+
+      .popup_block_close:before {
+        transform: rotate(45deg);
+      }
+
+      .popup_block_close:after {
+        transform: rotate(-45deg);
+        margin: 0 0 0 -20px;
+      }
+
+      .popup_block_title {
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 700;
+        margin: 0 0 18px;
+        text-align: center;
+      }
+
+      .popup_desc {
+        font-size: 20px;
+        line-height: 1;
+        margin: 0 0 30px;
+        text-align: center;
+      }
+
+      .form_input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 7px 16px;
+        margin: 0 0 14px;
+        font-family: 'Anonymous Pro', Helvetica, sans-serif;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #0f0f0f;
+      }
+
+      ::-moz-placeholder {
+        color: #0f0f0f;
+      }
+
+      :-moz-placeholder {
+        color: #0f0f0f;
+      }
+
+      :-ms-input-placeholder {
+        color: #0f0f0f;
+      }
+
+      :focus::-webkit-input-placeholder {
+        color: transparent !important;
+      }
+
+      :focus::-moz-placeholder {
+        color: transparent !important;
+      }
+
+      :focus:-moz-placeholder {
+        color: transparent !important;
+      }
+
+      :focus:-ms-input-placeholder {
+        color: transparent !important;
+      }
+
+      .form_button {
+        border: 2px solid #8815D2;
+        background: #8815D2;
+        border-radius: 30px;
+        display: block;
+        width: 100%;
+        color: #fff;
+        padding: 7px;
+        text-align: center;
+        transition: all 0.6s;
+        cursor: pointer;
+      }
+
+      .form_button:hover {
+        background: #fff;
+        color: #8815D2;
+      }
+    </style>
+    <div class="popup_block">
+      <div class="popup_block_title">Реестрація на курс</div>
+      <div class="popup_desc">Не зволікай! Кількість місць обмежена</div>
+      <form action="/" class="popup_form">
+        <input type="text" name="name" class="form_input" placeholder="Імя">
+        <input type="text" name="second_name" class="form_input" placeholder="Фамілія">
+        <input type="number" name="yers" class="form_input" placeholder="Ваш вік">
+        <input type="text" name="nik" class="form_input" placeholder="Нік у Telegram">
+        <input type="number" name="phone" class="form_input" placeholder="Номер телефону">
+        <button class="form_button">Відправити</button>
+      </form><!-- popup_form -->
+      <div class="popup_block_close"></div>
+    </div><!-- popup_block -->
+  </div><!-- popup -->
+  <script>
+    // nav
+    document.querySelectorAll('.main_nav_link').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+
+        document.querySelector('body').classList.remove('open_menu');
+
+        const targetId = link.getAttribute('href');
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          const offset = -100; // Отступ в пикселях
+
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition + offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+
+    // scroll
+    const body = document.querySelector("body");
+
+    window.addEventListener("scroll", event => {
+      if (window.scrollY > 0) {
+        body.classList.add("scrolled");
+      } else {
+        body.classList.remove("scrolled");
+      }
+    });
+
+    document.querySelectorAll('.question_block').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('open');
+      })
+    });
+
+    // popup_block_close
+    document.querySelector('.popup_block_close').addEventListener('click', () => {
+      document.querySelector('.popup').classList.remove('visible');
+    });
+
+    // popup_visible
+    document.querySelectorAll('.popup_visible').forEach(button => {
+      button.addEventListener('click', event => {
+        event.preventDefault();
+
+        document.querySelector('.popup').classList.add('visible');
+      });
+    });
+
+    // main_nav_menu
+    document.querySelector('.main_nav_menu').addEventListener('click', () => {
+      document.querySelector('body').classList.toggle('open_menu');
+    });
+  </script>
+</body>
+
+</html>
